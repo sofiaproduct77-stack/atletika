@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Фитнес-клуб АТЛЕТИКА — тренажёрный и аэробный зал, солярий. ул. Замятина, 4.">
+  <title>АТЛЕТИКА — фитнес-клуб</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="logo" aria-label="АТЛЕТИКА — на главную">
+        <span class="logo-mark" aria-hidden="true"></span>
+        <span class="brand-title" aria-label="АТЛЕТИКА"><span class="brand-white">АТЛ</span><span class="brand-red">ЕТИ</span><span class="brand-white">КА</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="nav-menu">
+        <a href="#club">Зал</a>
+        <a href="#tariffs">Абонементы</a>
+        <a href="#vip">VIP</a>
+        <a href="#solarium">Солярий</a>
+        <a href="#contact" class="nav-cta">Контакты</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <img
+          src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80"
+          alt=""
+          width="1600"
+          height="900"
+          fetchpriority="high"
+          decoding="async"
+        >
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="container hero-grid">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Фитнес-клуб · ул. Замятина, 4</p>
+          <h1 class="hero-brand">
+            <span class="brand-white">АТЛ</span><span class="brand-red">ЕТИ</span><span class="brand-white">КА</span>
+          </h1>
+          <p class="hero-tagline">СИЛА · ВЫНОСЛИВОСТЬ · РЕЗУЛЬТАТ</p>
+          <p class="hero-lead">
+            Тренажёрный и аэробный зал без лишнего шума. Приходи тренироваться — 
+            от разовых визитов до VIP с солярием и персональной тренировкой.
+          </p>
+          <div class="hero-actions">
+            <a href="#vip" class="btn btn-primary">VIP-абонемент</a>
+            <a href="#solarium" class="btn btn-ghost">Солярий</a>
+          </div>
+        </div>
+        <div class="hero-card reveal" data-delay="1">
+          <div class="hero-card-badge">VIP</div>
+          <p class="hero-card-title">3&nbsp;500 ₽</p>
+          <ul class="hero-card-list">
+            <li>Посещение ежедневное</li>
+            <li>Время не ограничено</li>
+            <li>Аэробный + тренажёрный зал</li>
+            <li>10 мин солярия + 1 тренировка с тренером</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary btn-block">Записаться</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>АТЛЕТИКА</span><span>•</span><span>ТРЕНАЖЁРНЫЙ ЗАЛ</span><span>•</span>
+        <span>АЭРОБИКА</span><span>•</span><span>СОЛЯРИЙ</span><span>•</span>
+        <span>АТЛЕТИКА</span><span>•</span><span>ТРЕНАЖЁРНЫЙ ЗАЛ</span><span>•</span>
+        <span>АЭРОБИКА</span><span>•</span><span>СОЛЯРИЙ</span><span>•</span>
+      </div>
+    </section>
+
+    <section class="section" id="club">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Фитнес-клуб</p>
+          <h2 class="section-title">Пространство для <span class="accent">работы</span></h2>
+        </header>
+        <div class="photo-grid">
+          <figure class="photo-card reveal">
+            <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=800&q=80" alt="Силовая тренировка" width="800" height="600" loading="lazy">
+            <figcaption>Силовой зал</figcaption>
+          </figure>
+          <figure class="photo-card reveal" data-delay="1">
+            <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=800&q=80" alt="Групповые занятия" width="800" height="600" loading="lazy">
+            <figcaption>Аэробный зал</figcaption>
+          </figure>
+          <figure class="photo-card reveal" data-delay="2">
+            <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Функциональный тренинг" width="800" height="600" loading="lazy" decoding="async">
+            <figcaption>Функциональная зона</figcaption>
+          </figure>
+        </div>
+        <ul class="features-grid">
+          <li class="feature-card reveal">Тренажёрный зал</li>
+          <li class="feature-card reveal" data-delay="1">Аэробный зал</li>
+          <li class="feature-card reveal" data-delay="2">Персональные тренировки</li>
+          <li class="feature-card reveal" data-delay="3">Солярий в здании клуба</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="tariffs">
+      <div class="container">
+        <header class="section-header reveal">
+          <p class="eyebrow">Абонементы</p>
+          <h2 class="section-title">Тарифы в <span class="accent">зал</span></h2>
+        </header>
+        <div class="tariffs-grid">
+          <article class="tariff-card reveal">
+            <h3 class="tariff-name">Обычный абонемент</h3>
+            <p class="tariff-price">1&nbsp;500 ₽</p>
+            <p class="tariff-note">Тренажёрный и аэробный зал</p>
+            <a href="#contact" class="btn btn-ghost btn-block">Оформить</a>
+          </article>
+          <article class="tariff-card tariff-card--year reveal" data-delay="1">
+            <h3 class="tariff-name">Абонемент на год</h3>
+            <p class="tariff-price">10&nbsp;200 ₽</p>
+            <p class="tariff-note">Год посещений в клубе</p>
+            <a href="#contact" class="btn btn-primary btn-block">Оформить</a>
+          </article>
+        </div>
+        <p class="tariffs-vip-hint reveal">
+          VIP с солярием и тренером — <a href="#vip">3&nbsp;500 ₽</a>
+        </p>
+      </div>
+    </section>
+
+    <section class="section section-dark" id="vip">
+      <div class="container vip-layout">
+        <div class="vip-content reveal">
+          <p class="eyebrow">Абонемент</p>
+          <h2 class="section-title">VIP <span class="accent">3&nbsp;500 ₽</span></h2>
+          <ul class="vip-list">
+            <li>Посещение ежедневное</li>
+            <li>Время не ограничено</li>
+            <li>Аэробный зал</li>
+            <li>Тренажёрный зал</li>
+            <li>10 минут солярия</li>
+            <li>1 персональная тренировка</li>
+          </ul>
+          <a href="#contact" class="btn btn-primary">Оформить VIP</a>
+        </div>
+        <div class="vip-visual reveal" data-delay="1">
+          <img
+            src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&amp;fit=crop&amp;w=900&amp;q=80"
+            alt="Атлет с гантелями"
+            class="vip-photo"
+            width="900"
+            height="1100"
+            loading="lazy"
+          >
+          <div class="vip-stamp" aria-hidden="true">VIP</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="solarium">
+      <div class="container solarium-grid">
+        <div class="reveal">
+          <p class="eyebrow">Солярий</p>
+          <h2 class="section-title">Загар и <span class="accent">уход</span></h2>
+          <p class="section-desc">
+            Солярий в фитнес-клубе <strong>АТЛЕТИКА</strong>. Разовая минута или абонементы на 50 и 100 минут.
+          </p>
+          <div class="price-panel">
+            <p class="price-panel-title">Разовое посещение</p>
+            <p class="price-row"><span>1 минута</span><strong>15 ₽</strong></p>
+            <p class="price-panel-title price-panel-title--sub">Абонементы</p>
+            <p class="price-row price-row--pass"><span>50 минут</span><strong>600 ₽</strong></p>
+            <p class="price-row price-row--pass"><span>100 минут</span><strong>1&nbsp;000 ₽</strong></p>
+            <p class="price-panel-title price-panel-title--sub">Дополнительно</p>
+            <p class="price-row note"><span>Набор для солярия (шапочка, коврик, стикини)</span><strong>20 ₽</strong></p>
+            <p class="price-row note"><span>Крема</span><strong>от 100 ₽</strong></p>
+          </div>
+        </div>
+        <figure class="solarium-photo reveal" data-delay="1">
+          <img
+            src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?auto=format&fit=crop&w=900&q=80"
+            alt="Солярий"
+            width="900"
+            height="700"
+            loading="lazy"
+          >
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contact">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Контакты</p>
+          <h2 class="section-title">Как <span class="accent">нас найти</span></h2>
+          <address class="contact-block">
+            <p class="contact-name">Фитнес-клуб <span class="brand-inline"><span class="brand-white">АТЛ</span><span class="brand-red">ЕТИ</span><span class="brand-white">КА</span></span></p>
+            <p data-site-address>ул. Замятина, 4</p>
+            <p><a class="contact-phone" data-site-phone href="tel:+79000000000">+7 (900) 000-00-00</a></p>
+          </address>
+          <div class="hours-card">
+            <div class="hours-row"><span>Пн — Пт</span><span data-site-hours-weekdays>9:00 – 22:00</span></div>
+            <div class="hours-row"><span>Сб — Вс</span><span data-site-hours-weekend>9:00 – 21:00</span></div>
+          </div>
+          <p class="contact-note">Солярий: уточняйте режим и запись у администратора клуба.</p>
+        </div>
+        <form class="contact-form reveal" data-delay="1" action="#" method="post">
+          <label>
+            Имя
+            <input type="text" name="name" placeholder="Как к тебе обращаться" autocomplete="name">
+          </label>
+          <label>
+            Телефон
+            <input type="tel" name="phone" placeholder="+7 …" autocomplete="tel">
+          </label>
+          <label>
+            Интересует
+            <select name="interest">
+              <option value="standard">Обычный абонемент 1&nbsp;500 ₽</option>
+              <option value="year">Абонемент на год 10&nbsp;200 ₽</option>
+              <option value="vip">VIP-абонемент 3&nbsp;500 ₽</option>
+              <option value="solarium">Солярий</option>
+              <option value="pt">Персональная тренировка</option>
+            </select>
+          </label>
+          <button type="submit" class="btn btn-primary btn-block">Отправить заявку</button>
+          <p class="form-hint">Заявка сохраняется на сервере — администратор увидит её в админке.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="footer-brand">
+        <span class="brand-white">АТЛ</span><span class="brand-red">ЕТИ</span><span class="brand-white">КА</span>
+      </p>
+      <p class="footer-copy">© <span id="year"></span> Фитнес-клуб АТЛЕТИКА · ул. Замятина, 4</p>
+      <a href="#top" class="footer-top">Наверх</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

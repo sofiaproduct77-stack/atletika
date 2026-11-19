@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>АТЛЕТИКА — админка</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="top">
+        <span class="logo">АТЛ<span class="accent">ЕТИ</span>КА · admin</span>
+        <button type="button" class="btn btn-ghost hidden" id="logout-btn">Выйти</button>
+      </header>
+
+      <section id="login-view" class="panel">
+        <h1>Вход</h1>
+        <form id="login-form" class="stack">
+          <label>
+            Логин
+            <input type="text" name="username" autocomplete="username" required />
+          </label>
+          <label>
+            Пароль
+            <input type="password" name="password" autocomplete="current-password" required />
+          </label>
+          <button type="submit" class="btn btn-primary">Войти</button>
+          <p class="msg err hidden" id="login-error"></p>
+        </form>
+      </section>
+
+      <div id="app-view" class="hidden">
+        <section class="panel">
+          <h2>Контакты на сайте</h2>
+          <form id="settings-form" class="grid-2">
+            <label class="span-2">
+              Адрес
+              <input type="text" name="address" placeholder="ул. Замятина, 4" />
+            </label>
+            <label>
+              Телефон (для ссылки tel:)
+              <input type="text" name="phone" placeholder="+79001234567" />
+            </label>
+            <label>
+              Телефон (как показывать)
+              <input type="text" name="phoneDisplay" placeholder="+7 (900) 123-45-67" />
+            </label>
+            <label class="span-2">
+              Telegram-канал/чат (без @)
+              <input type="text" name="telegram" placeholder="atletika_gym" />
+            </label>
+            <label>
+              Пн–Пт
+              <input type="text" name="hoursWeekdays" />
+            </label>
+            <label>
+              Сб–Вс
+              <input type="text" name="hoursWeekend" />
+            </label>
+            <div class="span-2 actions">
+              <button type="submit" class="btn btn-primary">Сохранить</button>
+              <p class="msg ok hidden" id="settings-msg">Сохранено</p>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel">
+          <h2>Заявки с сайта</h2>
+          <p class="hint">Новые заявки появляются после отправки формы на главной.</p>
+          <div class="table-wrap">
+            <table id="leads-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Дата</th>
+                  <th>Имя</th>
+                  <th>Связь</th>
+                  <th>Интерес</th>
+                  <th>Статус</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+      </div>
+    </div>
+    <script src="admin.js"></script>
+  </body>
+</html>
